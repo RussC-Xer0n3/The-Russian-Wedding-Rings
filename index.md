@@ -1,37 +1,91 @@
-## Welcome to GitHub Pages
+# The Russian Wedding Rings
+## A look at returning a single value from several differing radii
 
-You can use the [editor on GitHub](https://github.com/RussC-Xer0n3/The-Russian-Wedding-Rings/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### Purpose
+A quick search returns the following information in Symbolic representation of The Russian Wedding Rings;
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+**Symbolism of Russian Wedding Rings The Russian wedding ring symbolises more than the original roots of Russian marriage. In religious terms, the ring represents, the Father, Son and Holy Spirit of the Catholic church, coming together to form the Holy Trinity.**
 
-### Markdown
+I wondered if it would be possible to complete the task using various sized radii in the variables, let's take a look;
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+**P.S. Rusher was my old handle, so was whiterabbit**
 
-```markdown
-Syntax highlighted code block
+### Some were too large
+```
+#! /in/env/python
 
-# Header 1
-## Header 2
-### Header 3
+pi = 3.14159
 
-- Bulleted
-- List
+r1 = 1
+r2 = 2
+r3 = 3
 
-1. Numbered
-2. List
+r = (r3**(r1**(r2)**3))**3
 
-**Bold** and _Italic_ and `Code` text
+area = (pi*(r)**3)
 
-[Link](url) and ![Image](src)
+print(area**area)
+exit(1)
+#Thu 11 Apr 2019 18:21:53 BST  with love from rusher kiss kiss
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+### Some were not meant to be
+```
+#! /in/env/python
 
-### Jekyll Themes
+pi = 3.14159
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/RussC-Xer0n3/The-Russian-Wedding-Rings/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+r1 = 2
+r2 = 1
+r3 = 0
 
-### Support or Contact
+r = 1*(r3**(r1**(r2)**3))
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+area = (pi*(r)**3)
+
+print(area)
+exit(1)
+#Thu 11 Apr 2019 18:21:53 BST  with love from rusher kiss kiss
+```
+
+### Others married up nicely
+```
+#! /in/env/python
+
+pi = 3.14159
+
+r1 = 2
+r2 = 1
+r3 = 0
+
+r = 1*(r3**(r1**(r2)**3))
+
+area = ((pi*(r**3))**3)
+
+print(area**area)
+exit(1)
+#Thu 11 Apr 2019 18:21:53 BST  with love from rusher kiss kiss
+```
+
+### Finally, the Wedding
+Finally, they all marry up and the value returns 1.0, true, one.
+```
+#! /in/env/python
+
+pi = 3.14159
+
+r1 = 2
+r2 = 1
+r3 = 0
+
+r = 1*(r3**(r1**(r2)**3))
+
+area = (pi*(r)**3)
+
+print(area**area)
+exit(1)
+#Thu 11 Apr 2019 18:21:53 BST  with love from rusher kiss kiss
+```
+
+### Further exploration
+There was then further exploration into equilateral infinite loops to form a self-reinforcing helictical sphere which I dubbed [Fusion in the github repository](https://github.com/RussC-Xer0n3/The-old-Fusion-Repository) which you can read about properly [in these GitHub pages](https://RussC-Xer0n3.github.io/The-old-Fusion-Repository).
